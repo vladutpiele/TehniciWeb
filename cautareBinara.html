@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Cautare binara
+    </title>
+    <link rel="stylesheet" href="cautareBinara.css">
+</head>
+
+<body>
+    <header>
+        <h1> Cautare binara </h1>
+        <div>
+            Algoritmul de căutare binară este un algoritm eficient pentru căutarea unui element într-un tablou sortat.
+            Principiul său de bază constă în compararea elementului căutat cu elementul din mijloc al tabloului și în
+            continuarea căutării în jumătatea corespunzătoare a tabloului, eliminând astfel jumătatea în care sigur nu
+            se poate afla elementul căutat. Procesul continuă recursiv până când elementul este găsit sau jumătatea de
+            căutare devine vidă.
+        </div>
+        <div id="butoaneHeader">
+            <button class="button" id="codProblema"> Codul problemei </button>
+            <button class="button" id="alteProbleme"> Probleme asemanatoare </button>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <pre id="afiseazaDupaClickCodProblema">
+            #include iostream
+                #include vector
+                    
+                int binarySearch(const std::vector int & array, int target) {
+                    int left = 0;
+                    int right = array.size() - 1;
+                    
+                    while (left <= right) {
+                        int mid = left + (right - left) / 2;
+                    
+                        if (array[mid] == target) {
+                            return mid;
+                        }
+                        else if (array[mid] < target) {
+                            left = mid + 1;
+                        }
+                        else {
+                            right = mid - 1;
+                        }
+                    }
+                    
+                    return -1;
+                }
+                    
+                int main() {
+                    std::vector(int)  vec = {1, 3, 5, 7, 9, 11, 13};
+                    
+                    int target = 7;
+                    int index = binarySearch(vec, target);
+                    
+                    if (index != -1) {
+                        std::cout << "Elementul " << target << " se află la indexul " << index << std::endl;
+                    }
+                    else {
+                        std::cout << "Elementul " << target << " nu a fost găsit în vector." << std::endl;
+                    }
+                    
+                    return 0;
+                }
+                </pre>
+        </div>
+
+        <div id="problemeAsemanatoare">
+            <ul>
+                <li><a href=""> Problem1 </a></li>
+                <li><a href=""> Problem2 </a></li>
+                <li><a href=""> Problem3 </a></li>
+            </ul>
+        </div>
+        <div id="startCautareBinara">
+            Presupunem ca numarul cautat binar este 9
+        </div>
+        <div class="container">
+            <div class="patrat">3</div>
+            <div class="patrat">9</div>
+            <div class="patrat">11</div>
+            <div class="patrat">19</div>
+            <div class="patrat">25</div>
+            <div class="patrat">29</div>
+            <div class="patrat">33</div>
+            <div class="patrat">38</div>
+            <div class="patrat">42</div>
+            <div class="patrat">49</div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="cautareBinara.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.primaPagina {
+    color: white;
+    position: absolute;
+    left: 2%;
+    padding: 10px;
+    max-width: 30%;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+.primaPagina2 {
+    color: white;
+    position: absolute;
+    left: 65%;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+ul li a {
+    color: white;
+    padding: 15px;
+    padding-left: 0px;
+}
+
+li {
+    padding: 15px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url("imgProiect.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.animatie img {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    display: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    /* position:relative pentru a poziționa dropdown-content relativ la acest element */
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.dropdown-content {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    transition: opacity 1.5s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    /* la hover setam opacitatea la 1 pentru a face dropdown-content vizibil */
+}
