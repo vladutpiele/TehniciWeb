@@ -50,7 +50,7 @@ body {
 
 .animatie img {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 70%;
     display: none;
 }
@@ -88,4 +88,100 @@ body {
 .dropdown:hover .dropdown-content {
     opacity: 1;
     /* la hover setam opacitatea la 1 pentru a face dropdown-content vizibil */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .primaPagina {
+        position: relative;
+        max-width: 90%;
+        left: 5%;
+    }
+
+    .primaPagina2 {
+        position: relative;
+        left: 5%;
+        top: 70%;
+        max-width: 90%;
+    }
+
+    .animatie img {
+        left: 70%;
+        width: 50%;
+    }
+
+    .dropdown {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        background-color: transparent;
+        min-width: auto;
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .footerText {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .primaPagina {
+        max-width: 40%;
+    }
+
+    .primaPagina2 {
+        left: 65%;
+        top: 20%;
+        max-width: 30%;
+    }
+
+    .animatie img {
+        display: block;
+        width: auto;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .dropdown-content {
+        opacity: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        padding: 10px 16px;
+        display: block;
+        text-align: left;
+    }
+
+    .footerText {
+        font-size: 16px;
+    }
 }
