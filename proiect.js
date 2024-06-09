@@ -47,3 +47,29 @@ csesLink.addEventListener('mouseleave', () => {
     csesImg.style.display = 'none';
 })
 
+
+const butonCautareBinara = document.getElementById('cautareBinaraButon');
+
+const footer = document.getElementById('footerText');
+
+function updateFooterText() {
+    let counter = localStorage.getItem('cautareBinaraCounter');
+    if (!counter) {
+        counter = 0;
+    }
+    footer.textContent = 'Butonul de căutare binară a fost apăsat de ' + counter + ' ori.';
+}
+
+updateFooterText();
+
+butonCautareBinara.addEventListener('click', () => {
+    let counter = localStorage.getItem('cautareBinaraCounter');
+
+    if (counter) {
+        counter = parseInt(counter) + 1;
+    } else {
+        counter = 1;
+    }
+    localStorage.setItem('cautareBinaraCounter', counter);
+    updateFooterText();
+})
