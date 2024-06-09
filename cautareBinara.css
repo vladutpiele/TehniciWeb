@@ -150,3 +150,68 @@ header div {
         background-color: red;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    header div {
+        left: 2%;
+    }
+
+    #butoaneHeader {
+        top: 30%;
+    }
+
+    #afiseazaDupaClickCodProblema {
+        left: 2%;
+        top: 37%;
+        width: 90%;
+    }
+
+    #problemeAsemanatoare {
+        left: 2%;
+        top: 80%;
+        width: 90%;
+    }
+
+    #startCautareBinara {
+        left: 2%;
+        top: 73%;
+    }
+
+    .container {
+        left: 5%;
+        top: 90%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    header div {
+        left: 5%;
+    }
+
+    #butoaneHeader {
+        top: 20%;
+    }
+
+    #afiseazaDupaClickCodProblema {
+        left: 5%;
+        top: 27%;
+        width: 50%;
+    }
+
+    #problemeAsemanatoare {
+        left: 60%;
+        top: 30%;
+        width: 30%;
+    }
+
+    #startCautareBinara {
+        left: 15%;
+        top: 40%;
+    }
+
+    .container {
+        left: 15%;
+        top: 50%;
+    }
+}
